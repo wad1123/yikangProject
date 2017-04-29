@@ -1,0 +1,30 @@
+@maincolor:#44b181;
+@backfsz:25px!important;
+
+.ff(){
+  font-family:Consolas!important;
+}
+.topBtn(){
+  background: @maincolor;
+  color:#fff;
+  border:none;
+  &::before,&::after{
+    display: none;
+  }
+  &:active,&:focus,&:visited,&:hover{
+    background: unset!important;
+    color:unset!important;
+  }
+}
+.mainbgc (){
+  background-color: @maincolor!important;
+}
+.color(){
+  color:#ebebeb!important;
+}
+.fontszie() {
+  i>span{
+    font-size: 16px;
+    line-height: 45px;
+  }
+}

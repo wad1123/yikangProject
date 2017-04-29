@@ -1,0 +1,38 @@
+html {
+  font-family: Consolas!important;
+}
+header {
+  background-color: #44b181 !important;
+}
+header i > span {
+  font-size: 16px;
+  line-height: 45px;
+}
+header h1 {
+  color: #ebebeb!important;
+}
+header i {
+  font-size: 25px !important;
+  line-height: 45px!important;
+}
+header span {
+  color: #ebebeb!important;
+  position: absolute;
+  width: 35px;
+}
+header button.ui-btn {
+  background: #44b181;
+  color: #fff;
+  border: none;
+}
+header button.ui-btn::before,
+header button.ui-btn::after {
+  display: none;
+}
+header button.ui-btn:active,
+header button.ui-btn:focus,
+header button.ui-btn:visited,
+header button.ui-btn:hover {
+  background: unset!important;
+  color: unset!important;
+}
