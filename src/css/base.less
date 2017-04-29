@@ -6,6 +6,8 @@
 }
 .topBtn(){
   background: @maincolor;
+  padding: 0!important;
+  min-width: unset;
   color:#fff;
   border:none;
   &::before,&::after{
@@ -14,6 +16,52 @@
   &:active,&:focus,&:visited,&:hover{
     background: unset!important;
     color:unset!important;
+  }
+}
+.idx_tab(){
+  .ui-tab-nav{
+    position: relative;
+    padding:0 15px 0;
+    li{
+      &.current{
+        border-bottom: 2px @maincolor solid;
+      }
+      &:nth-of-type(2){
+        .centerTab;
+      }
+    }
+    &::before{
+      content:'';
+      position: absolute;
+      right: 10px;
+      top: 30%;
+      background-image: url(../../dist/img/sprite.png);
+      background-position: -155px -8px;
+      background-size: 320px 105px;
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+.centerTab(){
+  position: relative;
+  &::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    top: 33.33%;
+    width: 0;
+    height: 40%;
+    border-right: 1px solid #e1e1e1;
+  }
+  &::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    top: 33.33%;
+    width: 0;
+    height: 40%;
+    border-left: 1px solid #e1e1e1;
   }
 }
 .mainbgc (){

@@ -22,6 +22,8 @@ header span {
 }
 header button.ui-btn {
   background: #44b181;
+  padding: 0!important;
+  min-width: unset;
   color: #fff;
   border: none;
 }
@@ -35,4 +37,46 @@ header button.ui-btn:visited,
 header button.ui-btn:hover {
   background: unset!important;
   color: unset!important;
+}
+section.idx_tab .ui-tab-nav {
+  position: relative;
+  padding: 0 15px 0;
+}
+section.idx_tab .ui-tab-nav li.current {
+  border-bottom: 2px #44b181 solid;
+}
+section.idx_tab .ui-tab-nav li:nth-of-type(2) {
+  position: relative;
+}
+section.idx_tab .ui-tab-nav li:nth-of-type(2)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 33.33%;
+  width: 0;
+  height: 40%;
+  border-right: 1px solid #e1e1e1;
+}
+section.idx_tab .ui-tab-nav li:nth-of-type(2)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 33.33%;
+  width: 0;
+  height: 40%;
+  border-left: 1px solid #e1e1e1;
+}
+section.idx_tab .ui-tab-nav::before {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  background-image: url(../../dist/img/sprite.png);
+  background-position: -155px -8px;
+  background-size: 320px 105px;
+  width: 22px;
+  height: 22px;
+}
+section.idx_tab .ui-tab-nav li {
+  color: #333;
 }
