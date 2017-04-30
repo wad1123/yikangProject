@@ -1,37 +1,59 @@
-@maincolor:#44b181;
-@backfsz:25px!important;
+@maincolor: #44b181;  /*主题色*/
+@backfsz: 25px !important; /*返回键字体大小*/
+@facecolor: #fff;/*面板的背景颜色*/
+@bgcolor: #ebebeb;/*主题背景*/
+@footPicPosi: 30/44;/*底部背景图标换算比例*/
+@footerbg:#f5f7f9;/*底部背景色*/
+@nmftcolor: #b4b5b6;/*底部tab按钮静态字体色*/
 
-.ff(){
-  font-family:Consolas!important;
+.P_rtv(){
+  position: relative;
 }
-.topBtn(){
+.P_abs(){
+  position: absolute;
+}
+.F_left(){
+  float:left;
+}
+.F_right(){
+  float:right;
+}
+
+.ff() {
+  font-family: Consolas !important;
+  background-color: @bgcolor;
+}
+
+.topBtn() {
   background: @maincolor;
-  padding: 0!important;
+  padding: 0 !important;
   min-width: unset;
-  color:#fff;
-  border:none;
-  &::before,&::after{
+  color: #fff;
+  border: none;
+  &::before, &::after {
     display: none;
   }
-  &:active,&:focus,&:visited,&:hover{
-    background: unset!important;
-    color:unset!important;
+  &:active, &:focus, &:visited, &:hover {
+    background: unset !important;
+    color: unset !important;
   }
 }
-.idx_tab(){
-  .ui-tab-nav{
+
+.idx_tab() {
+  .ui-tab-nav {
+    background-color: @facecolor;
     position: relative;
-    padding:0 15px 0;
-    li{
-      &.current{
+    padding: 0 15px 0;
+    li {
+      &.current {
         border-bottom: 2px @maincolor solid;
       }
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         .centerTab;
       }
     }
-    &::before{
-      content:'';
+    &::before {
+      content: '';
       position: absolute;
       right: 10px;
       top: 30%;
@@ -42,11 +64,101 @@
       height: 22px;
     }
   }
+  .ui-tab-content{
+    padding-bottom:70px;
+    li{
+      &:nth-of-type(1){
+        .banner{
+          img{
+            display: block;
+            width: 100%;
+          }
+        }
+        .info{
+          .block{
+            margin-top: 15px;
+            background-color: #fff;
+            padding:5px;
+            .ui-txt-muted{
+              font-size:12px;
+              span{
+                width: 0;
+                height: 50%;
+                border-right: 1px solid #333;
+              }
+            }
+            .listenTo{
+              .P_rtv;
+              height: 65px;
+              .Icon{
+                float:left;
+                width: 50px;
+                margin: 10px 0 0 5px;
+                height: 50px;
+                border-radius:40px;
+                background-color: #ff0000;
+                background-image: url(../img/tx.jpg);
+                background-size:cover;
+              }
+              .hear {
+                .P_rtv;
+                box-sizing: border-box;
+                padding:6px 0 0 11px;
+                margin:25px 0 0 15px;
+                background-color: @maincolor;
+                border-radius:16px;
+                float: left;
+                width: 150px;
+                min-height: 32px;
+                &::before{
+                  content:'';
+                  .P_abs;
+                  left: -5px;
+                  top: 0;
+                  width: 20px;
+                  height: 20px;
+                  background-image: url(../../dist/img/sprite.png);
+                  background-position: -302px -133px;
+                }
+                img{
+                  .F_left;
+                  display:block;
+                  width: 18px;
+                }
+                h5{
+                 .F_left;
+                  color:@facecolor;
+                }
+              }
+              .audience{
+                .P_abs;
+                right: 0;
+                bottom: 0;
+                min-width: 40px;
+                img{
+                  .F_left;
+                  margin:2px 5px 0 0;
+                  width: 14px;
+                  display: block;
+                }
+                span{
+                  .F_left;
+                  font-size:12px;
+                  color:@nmftcolor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-.centerTab(){
+
+.centerTab() {
   position: relative;
-  &::before{
-    content:'';
+  &::before {
+    content: '';
     position: absolute;
     left: 0;
     top: 33.33%;
@@ -54,8 +166,8 @@
     height: 40%;
     border-right: 1px solid #e1e1e1;
   }
-  &::after{
-    content:'';
+  &::after {
+    content: '';
     position: absolute;
     right: 0;
     top: 33.33%;
@@ -64,15 +176,114 @@
     border-left: 1px solid #e1e1e1;
   }
 }
-.mainbgc (){
-  background-color: @maincolor!important;
+
+.mainbgc () {
+  background-color: @maincolor !important;
 }
-.color(){
-  color:#ebebeb!important;
+
+.color() {
+  color: #ebebeb !important;
 }
+
 .fontszie() {
-  i>span{
+  i > span {
     font-size: 16px;
     line-height: 45px;
+  }
+}
+
+.footer() {
+  .ui-tiled {
+    li {
+      background: @footerbg !important;
+      div {
+        width: 30px;
+        height: 56px;
+        div {
+          box-sizing: border-box;
+          margin-top: 5px;
+          background-image: url(../../dist/img/sprite.png);
+          background-size: @footPicPosi*640px @footPicPosi*209px;
+          width: 100%;
+          height: 30px;
+        }
+        p {
+          font-size: 14px;
+          color: @nmftcolor;
+        }
+      }
+      .footer_pic;
+    }
+  }
+}
+
+.footer_pic() {
+  &:nth-of-type(1) {
+    div {
+      div {
+        background-position: -@footPicPosi*438px -@footPicPosi*12px;
+      }
+    }
+    &:hover {
+      div {
+        div {
+          background-position: -@footPicPosi*236px -@footPicPosi*72px;
+        }
+        p {
+          color: @maincolor;
+        }
+      }
+    }
+  }
+  &:nth-of-type(2) {
+    div {
+      div {
+        background-position: -@footPicPosi*61px -@footPicPosi*72px;
+      }
+    }
+    &:hover {
+      div {
+        div {
+          background-position: -@footPicPosi*176px -@footPicPosi*12px;
+        }
+        p {
+          color: @maincolor;
+        }
+      }
+    }
+  }
+  &:nth-of-type(3) {
+    div {
+      div {
+        background-position: -@footPicPosi*220px -@footPicPosi*12px;
+      }
+    }
+    &:hover {
+      div {
+        div {
+          background-position: -@footPicPosi*572px -@footPicPosi*12px;
+        }
+        p {
+          color: @maincolor;
+        }
+      }
+    }
+  }
+  &:nth-of-type(4) {
+    div {
+      div {
+        background-position: -@footPicPosi*264px -@footPicPosi*12px;
+      }
+    }
+    &:hover {
+      div {
+        div {
+          background-position: -@footPicPosi*105px -@footPicPosi*72px;
+        }
+        p {
+          color: @maincolor;
+        }
+      }
+    }
   }
 }
