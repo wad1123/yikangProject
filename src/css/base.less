@@ -33,6 +33,16 @@
 .boxBoder(){
   box-sizing:border-box;
 }
+.clearfix(){
+  &::before,&::after{
+    content:'';
+    display:block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear:both;
+  }
+}
 
 .quesCon(){
     .boxBoder;
@@ -89,6 +99,7 @@
     background-color: @facecolor;
     position: relative;
     padding: 0 15px 0;
+    .bb1px;
     li {
       &.current {
         border-bottom: 2px @maincolor solid;
@@ -110,7 +121,7 @@
     }
   }
   .ui-tab-content{
-    padding-bottom:70px;
+    padding-bottom:60px;
     li{
       &:nth-of-type(1){
         .banner{
@@ -231,6 +242,77 @@
             background-color: @facecolor;
             .ques_block{
               .quesCon;
+            }
+          }
+        }
+      }
+      &:nth-of-type(3){
+        .brilliance_block{
+          .boxBoder;
+          background-color: @facecolor;
+          padding:10px;
+          height: 85px;
+          margin-bottom:10px;
+          img.bri_icon{
+            .F_left;
+            margin:10px 10px 0 0;
+            width: 55px;
+            border-radius:50%;
+          }
+          .bri_info{
+            .P_rtv;
+            overflow:hidden;
+            .P_rtv;
+            .bri_itro{
+              font-size:12px;
+            }
+            .mess{
+              font-size:12px;
+              overflow: hidden;
+              margin-top: 12px;
+              .bri_anws{
+                .F_left;
+                margin-right: 15px;
+                img{
+                  .F_left;
+                  width: 13px;
+                  margin-right:5px;
+                }
+                span{
+                  .F_left;
+                }
+              }
+              .bri_lisn{
+                .F_left;
+                img{
+                  .F_left;
+                  width: 13px;
+                  margin-right:5px;
+                }
+                span{
+                  .F_left;
+                }
+              }
+            }
+            .toListn {
+              .P_abs;
+              right: 0;
+              top: 18px;
+              padding: 3px;
+              border-radius: 4px;
+              border: 1px solid @maincolor;
+              .clearfix;
+              img {
+                .F_left;
+                width: 12px;
+                margin: 3px 3px 0 0;
+              }
+              span {
+                .F_left;
+                color: @maincolor;
+                font-size: 13px;
+                font-weight:400;
+              }
             }
           }
         }

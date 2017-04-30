@@ -50,6 +50,7 @@ section.idx_tab .ui-tab-nav {
   background-color: #fff;
   position: relative;
   padding: 0 15px 0;
+  border-bottom: 1px solid #e1e1e1;
 }
 section.idx_tab .ui-tab-nav li.current {
   border-bottom: 2px #44b181 solid;
@@ -87,7 +88,7 @@ section.idx_tab .ui-tab-nav::before {
   height: 22px;
 }
 section.idx_tab .ui-tab-content {
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 section.idx_tab .ui-tab-content li:nth-of-type(1) .banner img {
   display: block;
@@ -255,6 +256,82 @@ section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_bl
 }
 section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block .info p span {
   padding-left: 18px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  height: 85px;
+  margin-bottom: 10px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block img.bri_icon {
+  float: left;
+  margin: 10px 10px 0 0;
+  width: 55px;
+  border-radius: 50%;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info {
+  overflow: hidden;
+  position: relative;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .bri_itro {
+  font-size: 12px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess {
+  font-size: 12px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess .bri_anws {
+  float: left;
+  margin-right: 15px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess .bri_anws img {
+  float: left;
+  width: 13px;
+  margin-right: 5px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess .bri_anws span {
+  float: left;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess .bri_lisn {
+  float: left;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess .bri_lisn img {
+  float: left;
+  width: 13px;
+  margin-right: 5px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .mess .bri_lisn span {
+  float: left;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .toListn {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #44b181;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .toListn::before,
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .toListn::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .toListn img {
+  float: left;
+  width: 12px;
+  margin: 3px 3px 0 0;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(3) .brilliance_block .bri_info .toListn span {
+  float: left;
+  color: #44b181;
+  font-size: 13px;
+  font-weight: 400;
 }
 section.idx_tab .ui-tab-nav li {
   color: #333;
