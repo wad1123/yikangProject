@@ -167,6 +167,95 @@ section.idx_tab .ui-tab-content li:nth-of-type(1) .info .block .listenTo .audien
   font-size: 12px;
   color: #b4b5b6;
 }
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing {
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_title {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  height: 35px;
+  box-sizing: border-box;
+  line-height: 35px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_title .left {
+  float: left;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_title .right {
+  float: right;
+  font-size: 12px;
+  color: #44b181;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_con {
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 80px;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_con .left_icon {
+  width: 55px;
+  float: left;
+  margin-right: 10px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_con .info {
+  position: relative;
+  overflow: hidden;
+  font-size: 13px;
+  height: 100%;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_con .info p {
+  padding-top: 16px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_con .info p img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 14px;
+  margin-bottom: 2px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .perf_con .info p span {
+  padding-left: 18px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .mess {
+  padding: 10px;
+  font-size: 14px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .perfectLearing .mess .master {
+  font-size: 12px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info {
+  background-color: #fff;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block {
+  box-sizing: border-box;
+  padding: 10px;
+  min-height: 80px;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block .left_icon {
+  width: 55px;
+  float: left;
+  margin-right: 10px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block .info {
+  position: relative;
+  overflow: hidden;
+  font-size: 13px;
+  height: 100%;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block .info p {
+  padding-top: 16px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block .info p img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 14px;
+  margin-bottom: 2px;
+}
+section.idx_tab .ui-tab-content li:nth-of-type(2) .container .ques_info .ques_block .info p span {
+  padding-left: 18px;
+}
 section.idx_tab .ui-tab-nav li {
   color: #333;
 }

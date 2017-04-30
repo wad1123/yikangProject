@@ -18,7 +18,52 @@
 .F_right(){
   float:right;
 }
+.bt1px(){
+  border-top:1px solid #e1e1e1;
+}
+.br1px(){
+  border-right:1px solid #e1e1e1;
+}
+.bl1px(){
+  border-left:1px solid #e1e1e1;
+}
+.bb1px(){
+  border-bottom:1px solid #e1e1e1;
+}
+.boxBoder(){
+  box-sizing:border-box;
+}
 
+.quesCon(){
+    .boxBoder;
+    padding:10px;
+    min-height:80px;
+    .bb1px;
+    .left_icon{
+      width: 55px;
+      .F_left;
+      margin-right: 10px;
+    }
+    .info{
+      .P_rtv;
+      overflow:hidden;
+      font-size:13px;
+      height: 100%;
+      p{
+        padding-top:16px;
+        img{
+          .P_abs;
+          left: 0;
+          bottom: 0;
+          width: 14px;
+          margin-bottom: 2px;
+        }
+        span{
+          padding-left:18px;
+        }
+      }
+    }
+}
 .ff() {
   font-family: Consolas !important;
   background-color: @bgcolor;
@@ -147,6 +192,45 @@
                   color:@nmftcolor;
                 }
               }
+            }
+          }
+        }
+      }
+      &:nth-of-type(2){
+        .container{
+          .perfectLearing{
+            background-color: @facecolor;
+            margin-bottom:10px;
+            .perf_title{
+              .bt1px;
+              .bb1px;
+              height:35px;
+              .boxBoder;
+              line-height:35px;
+              .left{
+                .F_left;
+              }
+              .right{
+                .F_right;
+                font-size:12px;
+                color:@maincolor;
+              }
+            }
+            .perf_con{
+              .quesCon;
+            }
+            .mess{
+              padding:10px;
+              font-size:14px;
+              .master{
+                font-size:12px;
+              }
+            }
+          }
+          .ques_info{
+            background-color: @facecolor;
+            .ques_block{
+              .quesCon;
             }
           }
         }
