@@ -5,6 +5,7 @@
 @footPicPosi: 30/44;/*底部背景图标换算比例*/
 @footerbg:#f5f7f9;/*底部背景色*/
 @nmftcolor: #b4b5b6;/*底部tab按钮静态字体色*/
+@myiconPic:20/34;
 
 .P_rtv(){
   position: relative;
@@ -119,6 +120,28 @@
     }
   }
 }
+.tolistn(){
+  .toListn {
+    .P_abs;
+    right: 0;
+    top: 18px;
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid @maincolor;
+    .clearfix;
+    img {
+      .F_left;
+      width: 12px;
+      margin: 3px 3px 0 0;
+    }
+    span {
+      .F_left;
+      color: @maincolor;
+      font-size: 13px;
+      font-weight:400;
+    }
+  }
+}
 .brilliance_block(){
   .brilliance_block{
     .boxBoder;
@@ -167,26 +190,34 @@
           }
         }
       }
-      .toListn {
-        .P_abs;
-        right: 0;
-        top: 18px;
-        padding: 3px;
-        border-radius: 4px;
-        border: 1px solid @maincolor;
-        .clearfix;
-        img {
-          .F_left;
-          width: 12px;
-          margin: 3px 3px 0 0;
-        }
-        span {
-          .F_left;
-          color: @maincolor;
-          font-size: 13px;
-          font-weight:400;
-        }
-      }
+      .tolistn;
+    }
+  }
+}
+.me_p(){
+  .clearfix;
+  line-height: 50px;
+  font-size:14px;
+  background-color: @facecolor;
+  .me_left {
+    .F_left;
+    margin-top: 10px;
+    width: 30px;
+  }
+  .me_right{
+    .F_right;
+    margin-top: 20px;
+    width: 12px;
+  }
+}
+.me_P(){
+  p{
+    &.m_googQues{
+      .me_p;
+      .bb1px;
+    }
+    &.m_contiQues{
+      .me_p;
     }
   }
 }
@@ -240,6 +271,124 @@
   &:active, &:focus, &:visited, &:hover {
     background: unset !important;
     color: unset !important;
+  }
+}
+
+.found(){
+  .found{
+    .ui-tab-content{
+      li{
+        &:nth-of-type(1){
+          .fd_iconTitle {
+            width: 100%;
+            overflow: hidden;
+            background-color: @facecolor;
+            .fd_slideBar {
+              .clearfix;
+              display:inline-block;
+              white-space: nowrap;
+              margin: 0 5px;
+              li {
+                display:inline-block;
+                margin: 10px 5px 5px 5px;
+                img {
+                  width: 45px;
+                  display: block;
+                  border-radius: 50%;
+                }
+                p{
+                  font-size:13px;
+                  text-align:center;
+                }
+              }
+            }
+          }
+          .newIntro{
+            background-color: @facecolor;
+            margin-top: 10px;
+            .f_n_title{
+              font-size:13px;
+              line-height: 35px;
+              .bb1px;
+              span{
+                .F_right;
+                font-size:12px;
+              }
+            }
+            .f_n_block{
+              padding:8px 0;
+              .P_rtv;
+              .bb1px;
+              img {
+                .F_left;
+                width: 45px;
+                border-radius:50%;
+                margin:5px 10px 0 0;
+              }
+              .info{
+                overflow: hidden;
+                .f_n_name{
+                  font-size:14px;
+                }
+                .f_n_intro{
+                  font-size:12px;
+                }
+                .mess{
+                  font-size:12px;
+                }
+              }
+              .tolistn;
+            }
+          }
+        }
+        &:nth-of-type(2){
+          .f_ques{
+            background-color: @facecolor;
+            .f_ques_block{
+              padding:8px;
+              .bb1px;
+              .pic{
+                .F_left;
+                width: 60px;
+                border-radius:3px;
+                margin-right: 10px;
+              }
+              .f_q_info{
+                overflow:hidden;
+                h5{
+                  line-height: 30px;
+                  font-size:14px;
+                }
+                p{
+                  font-size:12px;
+                }
+              }
+            }
+          }
+          .hotSugguest{
+            .f_hs_title{
+              font-size:14px;
+              line-height: 30px;
+            }
+            .hs_con{
+              background-color: @facecolor;
+              .hs_con_block{
+                padding: 10px 0;
+                .bb1px;
+                p{
+                  &:nth-of-type(1){
+                    font-size:14px;
+                  }
+                  &:nth-of-type(2){
+                    font-size:12px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -324,6 +473,77 @@
       &:nth-of-type(3){
         .brilliance_block;
       }
+    }
+  }
+}
+
+.mineSite(){
+  .mine{
+    .logo{
+      height: 180px;
+      .boxBoder;
+      padding: 110px 10px 0;
+      text-align: center;
+      background-color:@maincolor;
+      .P_rtv;
+      .myIcon{
+        .P_abs;
+        left: 50%;
+        top: 50%;
+        margin-top:-55px;
+        margin-left: -35px;
+        width: 70px;
+        img{
+          border-radius:50%;
+          display: block;
+          width: 100%;
+        }
+      }
+      .logo_title{
+        color:@facecolor;
+        line-height: 20px;
+        .name{
+          font-size:16px;
+        }
+        .logo_intro{
+          font-size:13px;
+        }
+        .logo_prof{
+          font-size:12px;
+        }
+      }
+      .erweima {
+        .P_abs;
+        left: 10px;
+        top: 20px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../../dist/img/sprite.png);
+        background-size: @myiconPic*640px @myiconPic*209px;
+        background-position: -@myiconPic*177px -@myiconPic*133px;
+      }
+      .edit {
+        .P_abs;
+        right: 10px;
+        top: 20px;
+        width: 20px;
+        height: 20*36/34px;
+        background-image: url(../../dist/img/sprite.png);
+        background-size:@myiconPic*640px @myiconPic*209px;
+        background-position: -@myiconPic*109px -@myiconPic*133px;
+      }
+    }
+    .me_qus{
+      margin-top: 8px;
+      .me_P;
+    }
+    .me_aws{
+      margin-top: 8px;
+      .me_P;
+    }
+    .aboutme{
+      margin-top: 8px;
+      .me_p;
     }
   }
 }

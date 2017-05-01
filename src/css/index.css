@@ -490,6 +490,325 @@ section.idx_tab .Listen .brilliance_block .bri_info .toListn span {
   font-size: 13px;
   font-weight: 400;
 }
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle .fd_slideBar {
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 5px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle .fd_slideBar::before,
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle .fd_slideBar::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle .fd_slideBar li {
+  display: inline-block;
+  margin: 10px 5px 5px 5px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle .fd_slideBar li img {
+  width: 45px;
+  display: block;
+  border-radius: 50%;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .fd_iconTitle .fd_slideBar li p {
+  font-size: 13px;
+  text-align: center;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro {
+  background-color: #fff;
+  margin-top: 10px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_title {
+  font-size: 13px;
+  line-height: 35px;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_title span {
+  float: right;
+  font-size: 12px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block {
+  padding: 8px 0;
+  position: relative;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block img {
+  float: left;
+  width: 45px;
+  border-radius: 50%;
+  margin: 5px 10px 0 0;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .info {
+  overflow: hidden;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .info .f_n_name {
+  font-size: 14px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .info .f_n_intro {
+  font-size: 12px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .info .mess {
+  font-size: 12px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .toListn {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #44b181;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .toListn::before,
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .toListn::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .toListn img {
+  float: left;
+  width: 12px;
+  margin: 3px 3px 0 0;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(1) .newIntro .f_n_block .toListn span {
+  float: left;
+  color: #44b181;
+  font-size: 13px;
+  font-weight: 400;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .f_ques {
+  background-color: #fff;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .f_ques .f_ques_block {
+  padding: 8px;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .f_ques .f_ques_block .pic {
+  float: left;
+  width: 60px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .f_ques .f_ques_block .f_q_info {
+  overflow: hidden;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .f_ques .f_ques_block .f_q_info h5 {
+  line-height: 30px;
+  font-size: 14px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .f_ques .f_ques_block .f_q_info p {
+  font-size: 12px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .hotSugguest .f_hs_title {
+  font-size: 14px;
+  line-height: 30px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .hotSugguest .hs_con {
+  background-color: #fff;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .hotSugguest .hs_con .hs_con_block {
+  padding: 10px 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .hotSugguest .hs_con .hs_con_block p:nth-of-type(1) {
+  font-size: 14px;
+}
+section.idx_tab .found .ui-tab-content li:nth-of-type(2) .hotSugguest .hs_con .hs_con_block p:nth-of-type(2) {
+  font-size: 12px;
+}
+section.idx_tab .mine .logo {
+  height: 180px;
+  box-sizing: border-box;
+  padding: 110px 10px 0;
+  text-align: center;
+  background-color: #44b181;
+  position: relative;
+}
+section.idx_tab .mine .logo .myIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -55px;
+  margin-left: -35px;
+  width: 70px;
+}
+section.idx_tab .mine .logo .myIcon img {
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+}
+section.idx_tab .mine .logo .logo_title {
+  color: #fff;
+  line-height: 20px;
+}
+section.idx_tab .mine .logo .logo_title .name {
+  font-size: 16px;
+}
+section.idx_tab .mine .logo .logo_title .logo_intro {
+  font-size: 13px;
+}
+section.idx_tab .mine .logo .logo_title .logo_prof {
+  font-size: 12px;
+}
+section.idx_tab .mine .logo .erweima {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../dist/img/sprite.png);
+  background-size: 376.47058824px 122.94117647px;
+  background-position: -104.11764706px -78.23529412px;
+}
+section.idx_tab .mine .logo .edit {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 20px;
+  height: 21.17647059px;
+  background-image: url(../../dist/img/sprite.png);
+  background-size: 376.47058824px 122.94117647px;
+  background-position: -64.11764706px -78.23529412px;
+}
+section.idx_tab .mine .me_qus {
+  margin-top: 8px;
+}
+section.idx_tab .mine .me_qus p.m_googQues {
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .mine .me_qus p.m_googQues::before,
+section.idx_tab .mine .me_qus p.m_googQues::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .mine .me_qus p.m_googQues .me_left {
+  float: left;
+  margin-top: 10px;
+  width: 30px;
+}
+section.idx_tab .mine .me_qus p.m_googQues .me_right {
+  float: right;
+  margin-top: 20px;
+  width: 12px;
+}
+section.idx_tab .mine .me_qus p.m_contiQues {
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+}
+section.idx_tab .mine .me_qus p.m_contiQues::before,
+section.idx_tab .mine .me_qus p.m_contiQues::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .mine .me_qus p.m_contiQues .me_left {
+  float: left;
+  margin-top: 10px;
+  width: 30px;
+}
+section.idx_tab .mine .me_qus p.m_contiQues .me_right {
+  float: right;
+  margin-top: 20px;
+  width: 12px;
+}
+section.idx_tab .mine .me_aws {
+  margin-top: 8px;
+}
+section.idx_tab .mine .me_aws p.m_googQues {
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+  border-bottom: 1px solid #e1e1e1;
+}
+section.idx_tab .mine .me_aws p.m_googQues::before,
+section.idx_tab .mine .me_aws p.m_googQues::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .mine .me_aws p.m_googQues .me_left {
+  float: left;
+  margin-top: 10px;
+  width: 30px;
+}
+section.idx_tab .mine .me_aws p.m_googQues .me_right {
+  float: right;
+  margin-top: 20px;
+  width: 12px;
+}
+section.idx_tab .mine .me_aws p.m_contiQues {
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+}
+section.idx_tab .mine .me_aws p.m_contiQues::before,
+section.idx_tab .mine .me_aws p.m_contiQues::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .mine .me_aws p.m_contiQues .me_left {
+  float: left;
+  margin-top: 10px;
+  width: 30px;
+}
+section.idx_tab .mine .me_aws p.m_contiQues .me_right {
+  float: right;
+  margin-top: 20px;
+  width: 12px;
+}
+section.idx_tab .mine .aboutme {
+  margin-top: 8px;
+  line-height: 50px;
+  font-size: 14px;
+  background-color: #fff;
+}
+section.idx_tab .mine .aboutme::before,
+section.idx_tab .mine .aboutme::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .mine .aboutme .me_left {
+  float: left;
+  margin-top: 10px;
+  width: 30px;
+}
+section.idx_tab .mine .aboutme .me_right {
+  float: right;
+  margin-top: 20px;
+  width: 12px;
+}
 footer .ui-tiled li {
   background: #f5f7f9 !important;
 }

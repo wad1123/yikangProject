@@ -4,7 +4,6 @@
 
     }] );
 
-
     app.directive( 'rkListq',[function () {
         return {
             templateUrl:'src/template/rkList.html',
@@ -35,8 +34,30 @@
             }
         }
     }] );
-
-
+    app.directive( 'toFound',[function () {
+        return {
+            templateUrl:'src/template/found.html',
+            restrict:'ECA',
+            scope:{},
+            replace:true,
+            link:function ( scope,ele,attr ) {
+                app.eleArr.push( ele );
+                $( 'footer li:nth-of-type(3)' ).click( Found );
+            }
+        }
+    }] );
+    app.directive( 'mineSite',[function () {
+        return {
+            templateUrl:'src/template/mine.html',
+            restrict:'ECA',
+            scope:{},
+            replace:true,
+            link:function ( scope,ele,attr ) {
+                app.eleArr.push( ele );
+                $( 'footer li:nth-of-type(4)' ).click( mine );
+            }
+        }
+    }] );
 
 
 }();
