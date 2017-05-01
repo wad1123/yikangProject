@@ -46,6 +46,10 @@ header button.ui-btn:hover {
   background: unset !important;
   color: unset !important;
 }
+section.idx_tab {
+  background-color: #ebebeb;
+  padding-bottom: 60px;
+}
 section.idx_tab .ui-tab-nav {
   background-color: #fff;
   position: relative;
@@ -86,9 +90,6 @@ section.idx_tab .ui-tab-nav::before {
   background-size: 320px 105px;
   width: 22px;
   height: 22px;
-}
-section.idx_tab .ui-tab-content {
-  padding-bottom: 60px;
 }
 section.idx_tab .ui-tab-content li:nth-of-type(1) .banner img {
   display: block;
@@ -338,6 +339,156 @@ section.idx_tab .ui-tab-nav li {
 }
 section.idx_tab .ui-tab-content {
   background-color: #ebebeb;
+}
+section.idx_tab .Listen .block {
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 5px;
+}
+section.idx_tab .Listen .block .ui-txt-muted {
+  font-size: 12px;
+}
+section.idx_tab .Listen .block .ui-txt-muted span {
+  width: 0;
+  height: 50%;
+  border-right: 1px solid #333;
+}
+section.idx_tab .Listen .block .listenTo {
+  position: relative;
+  height: 65px;
+}
+section.idx_tab .Listen .block .listenTo .Icon {
+  float: left;
+  width: 50px;
+  margin: 10px 0 0 5px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #ff0000;
+  background-image: url(../img/tx.jpg);
+  background-size: cover;
+}
+section.idx_tab .Listen .block .listenTo .hear {
+  position: relative;
+  box-sizing: border-box;
+  padding: 6px 0 0 11px;
+  margin: 25px 0 0 15px;
+  background-color: #44b181;
+  border-radius: 16px;
+  float: left;
+  width: 150px;
+  min-height: 32px;
+}
+section.idx_tab .Listen .block .listenTo .hear::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url(../../dist/img/sprite.png);
+  background-position: -302px -133px;
+}
+section.idx_tab .Listen .block .listenTo .hear img {
+  float: left;
+  display: block;
+  width: 18px;
+}
+section.idx_tab .Listen .block .listenTo .hear h5 {
+  float: left;
+  color: #fff;
+}
+section.idx_tab .Listen .block .listenTo .audience {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 40px;
+}
+section.idx_tab .Listen .block .listenTo .audience img {
+  float: left;
+  margin: 2px 5px 0 0;
+  width: 14px;
+  display: block;
+}
+section.idx_tab .Listen .block .listenTo .audience span {
+  float: left;
+  font-size: 12px;
+  color: #b4b5b6;
+}
+section.idx_tab .Listen .brilliance_block {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 10px;
+  height: 85px;
+  margin-bottom: 10px;
+}
+section.idx_tab .Listen .brilliance_block img.bri_icon {
+  float: left;
+  margin: 10px 10px 0 0;
+  width: 55px;
+  border-radius: 50%;
+}
+section.idx_tab .Listen .brilliance_block .bri_info {
+  overflow: hidden;
+  position: relative;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .bri_itro {
+  font-size: 12px;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess {
+  font-size: 12px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess .bri_anws {
+  float: left;
+  margin-right: 15px;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess .bri_anws img {
+  float: left;
+  width: 13px;
+  margin-right: 5px;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess .bri_anws span {
+  float: left;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess .bri_lisn {
+  float: left;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess .bri_lisn img {
+  float: left;
+  width: 13px;
+  margin-right: 5px;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .mess .bri_lisn span {
+  float: left;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .toListn {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid #44b181;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .toListn::before,
+section.idx_tab .Listen .brilliance_block .bri_info .toListn::after {
+  content: '';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .toListn img {
+  float: left;
+  width: 12px;
+  margin: 3px 3px 0 0;
+}
+section.idx_tab .Listen .brilliance_block .bri_info .toListn span {
+  float: left;
+  color: #44b181;
+  font-size: 13px;
+  font-weight: 400;
 }
 footer .ui-tiled li {
   background: #f5f7f9 !important;
