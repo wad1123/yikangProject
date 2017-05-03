@@ -15,29 +15,27 @@
     <i class="ui-icon-return" onclick="history.back()"><span>返回</span></i><h1>易康问答</h1><button class="ui-btn">●●●</button>
 </header>
 <!--tab切换栏-->
-<section id="container" class="ui-container idx_tab">
-    <rk-listq></rk-listq>
-    <to-listen></to-listen>
-    <to-found></to-found>
-    <mine-site></mine-site>
+<section id="container" class="ui-container idx_tab" ng-view>
+
 </section>
 <!--底部-->
 <footer class="ui-footer ui-footer-btn">
     <ul class="ui-tiled ui-border-t">
-        <li><div><div></div><p>榜单</p></div></li>
-        <li><div><div></div><p>收听</p></div></li>
-        <li><div><div></div><p>发现</p></div></li>
-        <li><div><div></div><p>我的</p></div></li>
+        <li><a href="#!/rklist"><div><div></div><p>榜单</p></div></a></li>
+        <li><a href="#!/tolisten"><div><div></div><p>收听</p></div></a></li>
+        <li><a href="#!/tofound"><div><div></div><p>发现</p></div></a></li>
+        <li><a href="#!/mineSite"><div><div></div><p>我的</p></div></a></li>
     </ul>
 </footer>
 </body>
 <script src="frozenui/lib/zepto.min.js"></script>
 <script src="src/js/angular.js"></script>
+<script src="src/js/angular-route.js"></script>
 <script src="src/js/swipe.js"></script>
 <script src="frozenui/js/frozen.js"></script>
 <script>
     ~function ( w ) {
-        var myapp = angular.module( 'myapp',[] );
+        var myapp = angular.module( 'myapp',['ngRoute'] );
         myapp.eleArr = [];
         w.myapp = myapp;
     }(window)
